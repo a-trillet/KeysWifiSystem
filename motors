@@ -1,0 +1,4 @@
+stepper motor: to get high torque, use a 2 simultaneous phase, for smoother rotation use, use microsteps phases: https://youtu.be/09Mpkjcr0bo
+
+consider gears if needed, not included in the stepper motors but in the servo motor: https://youtu.be/1WnGv-DPexc
+
