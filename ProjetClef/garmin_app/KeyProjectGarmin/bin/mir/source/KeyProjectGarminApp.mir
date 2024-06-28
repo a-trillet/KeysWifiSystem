@@ -1,0 +1,61 @@
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 5; ]
+class KeyProjectGarminApp extends Application.AppBase{
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 7; ]
+    function initialize() as Void {
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_7_26_9_4_start:
+[ "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_20_68_22_4_start:
+[ "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc" 21 8 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getv ? :KeyProjectGarminView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        %tmp.11 = getv ? :KeyProjectGarminDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_20_68_22_4_stop:
+    }
+}
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 26; ]
+function getApp() as KeyProjectGarminApp {
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_26_41_28_0_start:
+[ "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc" 27 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 KeyProjectGarminApp;
+    ret %tmp.4;
+C_Bureau_GitRepos_garmin_keyapp_KeysWifiSystem_ProjetClef_garmin_app_KeyProjectGarmin_source_KeyProjectGarminApp_mc_26_41_28_0_stop:
+}
+[ @file = "C:\Bureau\GitRepos\garmin_keyapp\KeysWifiSystem\ProjetClef\garmin_app\KeyProjectGarmin\source\KeyProjectGarminApp.mc"; @line = 1; ]
+<init> {
+}
